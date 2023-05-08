@@ -49,4 +49,4 @@ module.exports = {
     getAllUsers,
     changePassword,
     addUser
-};
+}; 
