@@ -46,6 +46,13 @@ function addUser(req, res) {
 
 
 function login(req, res) {
+    /*
+        this variable is equivalent to:
+        req.body.email and req.body.password
+
+        const email = req.body.email;
+        const password = req.body.password;
+    */ 
     const { email, password } = req.body;
 
     const user = usersModel.find((user) => user.email === email && user.password === password);
